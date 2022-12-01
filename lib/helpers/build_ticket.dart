@@ -10,7 +10,6 @@ class BuildTicket {
 
   static Future<Uint8List> buildTicket(data, ArchivesModel usuario) {
     final pdf = pw.Document();
-    final f = DateFormat('dd-MM-yyyy');
     final formatter = intl.NumberFormat.decimalPattern();
 
     pdf.addPage(pw.MultiPage(
